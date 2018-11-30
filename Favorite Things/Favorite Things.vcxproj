@@ -115,6 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FavoriteThing.cpp" />
+    <ClCompile Include="Sneaker.cpp" />
+    <ClCompile Include="SneakerArray.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sneaker.h" />
+    <ClInclude Include="SneakerArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
