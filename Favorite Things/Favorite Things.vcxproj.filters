@@ -21,16 +21,16 @@
     <ClCompile Include="Sneaker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SneakerArray.cpp">
+    <ClCompile Include="SneakerCollection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sneaker.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SneakerArray.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="SneakerCollection.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

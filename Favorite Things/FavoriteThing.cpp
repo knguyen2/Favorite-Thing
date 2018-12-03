@@ -35,7 +35,7 @@
 		Your program should be constructed such that you have one .h and .cpp file per class. And the main (driver) function should be in a separate cpp file.
 */
 #include <iostream>
-#include "SneakerArray.h"
+#include "SneakerCollection.h"
 using namespace std;
 
 //Function Declaration
@@ -46,18 +46,22 @@ void welcomeMsg();
 void welcomeMsg()
 {
 
-	cout << "\n\n\t\t\t\t    * * * * * * * * * * * * * * * * " << endl;
-	cout << "\t\t\t\t    *                             * " << endl;
-	cout << "\t\t\t\t    *	     Welcome to the       * " << endl;
-	cout << "\t\t\t\t    *        Sneaker Vault        * " << endl;
-	cout << "\t\t\t\t    *                             * " << endl;
-	cout << "\t\t\t\t    *  Follow instructions below  * " << endl;
-	cout << "\t\t\t\t    * to store your fav sneakers  * " << endl;
-	cout << "\t\t\t\t    *                             * " << endl;
-	cout << "\t\t\t\t    *       Press Enter to        * " << endl;
-	cout << "\t\t\t\t    *       open the vault!       * " << endl;
-	cout << "\t\t\t\t    *                             * " << endl;
-	cout << "\t\t\t\t    * * * * * * * * * * * * * * * * " << endl;
+	cout << "\n\n				    * * * * * * * * * * * * * * * * * * * * " << endl;
+	cout << "				    *                                     * " << endl;
+	cout << "				    *	         Welcome to the           * " << endl;
+	cout << "				    *            Sneaker Vault            * " << endl;
+	cout << "				    *                                     * " << endl;
+	cout << "				    *      Follow instructions below      * " << endl;
+	cout << "				    *     to store your fav sneakers      * " << endl;
+	cout << "				    *                                     * " << endl;
+	cout << "				    * * * * * * * * * * * * * * * * * * * * " << endl;
+	
+	cout << "\n\n				    * * * * * * * * * * * * * * * * * * * * " << endl;
+	cout << "				    *                                     * " << endl;
+	cout << "				    *           Press Enter to            * " << endl;
+	cout << "				    *           open the vault!           * " << endl;
+	cout << "				    *                                     * " << endl;
+	cout << "				    * * * * * * * * * * * * * * * * * * * * " << endl;
 
 }
 
@@ -65,7 +69,7 @@ void welcomeMsg()
 int main()
 {
 	welcomeMsg();
-	SneakerArray myCollection;
+	SneakerCollection myCollection;
 	bool moreSneaker = true;
 
 	do
@@ -77,19 +81,22 @@ int main()
 			moreSneaker = false;
 			break;
 		}
-		cout << "\n\t\t\t     Do you have another favorite sneaker? Hit 'Y' for yes" << endl;
-		cout << "\n\t\t\t     Otherwise, hit any key to exit out of the vault --->  ";
+		cout << "\n\n\n			     Do you have another favorite sneaker? Hit 'Y' for yes" << endl;
+		cout << "\n			     Otherwise, hit any key to exit out of the vault --->  ";
 		cin >> another;
 		cout << endl;
 		if (another == 'Y' || another == 'y')
 		{
 			cout << endl;
-			cout << "\n\n\t\t\t\t * * * * * * ADDING MORE SNEAKER * * * * * * ";
+			cout << "\n\n\t\t\t\t * * * * * * ADDING MORE SNEAKER * * * * * * \n";
 			moreSneaker = true;
 		}
 		else
 		{
 			moreSneaker = false;
+			cout << "\n\n\n		* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *" << endl;
+			cout << "\n			     YOUR SNEAKER INFOMATION WAS SAVED AND KEPT SAFE AT THE VAULT " << endl;
+			cout << "\n					   * * * * * * * * * * * * * * * \n" << endl;
 		}		
 	} while (moreSneaker == true);
 	
