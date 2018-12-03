@@ -8,7 +8,7 @@ SneakerCollection::SneakerCollection()
 }
 
 
-//Find duplicate of items 
+// A method that checks and inform user if an item already exists 
 bool SneakerCollection::findSecond(Sneaker second)
 {
 	for (int i = 0; i < collectionSize; i++)
@@ -26,7 +26,7 @@ bool SneakerCollection::findSecond(Sneaker second)
 	return true;
 }
 
-//Adding more items to the list and make sure no same items entered twice 
+// Function for adding more items to the list and make sure no same item entered twice 
 int SneakerCollection::moreSneaker()
 {
 	Sneaker newSneaker;

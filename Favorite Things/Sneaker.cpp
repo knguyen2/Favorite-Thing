@@ -10,17 +10,19 @@ Sneaker::Sneaker()
 	sneakerPrice = 0;
 }
 
-
+// Constructor for getting sneaker brand
 string Sneaker::getSneakerBrand()
 {
 	return sneakerBrand;
 }
 
+// Constructor for getting sneaker name
 string Sneaker::getSneakerName()
 {
 	return sneakerName;
 }
 
+// Method to ask for user's favorite sneaker information 
 void Sneaker::getMoreSneaker()
 {
 	//clear the buffer
@@ -44,7 +46,7 @@ void Sneaker::getMoreSneaker()
 
 }
 
-//overloaded << operator friend function that will display back favorite item to the console
+// Overloaded << operator friend function that will display back favorite item to the console
 ostream& operator<< (ostream&o, const Sneaker& sneaker)
 {
 	o << "			   	       Let's see what you have before you go      \n" << endl;

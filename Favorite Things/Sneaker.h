@@ -10,6 +10,7 @@ const int MAXELEMENT = 5;
 //Declare a class for Sneaker
 class Sneaker
 {
+//5 private member elements (data)
 private:
 	string sneakerBrand;
 	string sneakerName;
@@ -19,10 +20,13 @@ private:
 
 public:
 	Sneaker();
+
 	//Retrieves user input and stores into the list (vault)
 	void getMoreSneaker();
+	
 	//Retrieves user input for sneaker brand
 	string getSneakerBrand();
+	
 	//Retrives user input for sneaker name 
 	string getSneakerName();
 
